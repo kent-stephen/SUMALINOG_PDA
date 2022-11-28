@@ -34,6 +34,7 @@
             this.label = new System.Windows.Forms.Label();
             this.lbl_output = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // radioButton1
@@ -89,7 +90,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(341, 275);
+            this.button1.Location = new System.Drawing.Point(260, 275);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -97,11 +98,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // reset
+            // 
+            this.reset.BackColor = System.Drawing.Color.LightCoral;
+            this.reset.Location = new System.Drawing.Point(341, 275);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(75, 23);
+            this.reset.TabIndex = 6;
+            this.reset.Text = "Reset";
+            this.reset.UseVisualStyleBackColor = false;
+            this.reset.Click += new System.EventHandler(this.reset_Click);
+            // 
             // FormPDA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 445);
+            this.ClientSize = new System.Drawing.Size(452, 383);
+            this.Controls.Add(this.reset);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl_output);
             this.Controls.Add(this.label);
@@ -123,6 +136,7 @@
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label lbl_output;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button reset;
     }
 }
 

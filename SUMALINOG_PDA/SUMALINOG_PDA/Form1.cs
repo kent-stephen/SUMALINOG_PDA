@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -37,7 +38,7 @@ namespace SUMALINOG_PDA
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            label.Text = "PDA checking for Balanced Symbols";
+            label.Text = "PDA checking for Palindromes";
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -62,6 +63,12 @@ namespace SUMALINOG_PDA
         private void lbl_output_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void reset_Click(object sender, EventArgs e)
+        {
+            tb_text.Text = "";
+            lbl_output.Text = "";
         }
     }
 }
